@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="schedule" class="com.durgasoft.beans.Schedule"
+          c:scheduleId="C-111"
+          c:demoDate="21-03-2023"
+          c:demoTime="7AM"
+          />
+    <bean id="course" class="com.durgasoft.beans.Course"
+          c:cid="C-111"
+          c:cname="JAVA"
+          c:cfee="30000"
+          c:schedule-ref="schedule"
+          />
+</beans>
